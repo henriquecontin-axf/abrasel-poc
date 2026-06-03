@@ -1058,10 +1058,12 @@
                               >
 
                               <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000003tkkW" method="POST" data-lang="pt-BR" novalidate="novalidate">
+                                  
                                   <input type=hidden name="oid" value="00DHn000003tkkW">
-                                  <!-- <input type=hidden name="retURL" value="https://abrasel-poc.netlify.app/quero-associar.html"> -->
-                                  <input type="hidden" name="debug" value=1>                              
-                                  <input type="hidden" name="debugEmail" value="henrique.contin@agixforce.com.br">                               
+                                  <input type=hidden name="retURL" value="https://abrasel-poc.netlify.app/obrigado.html">
+
+                                  <!-- <input type="hidden" name="debug" value=1>                              
+                                  <input type="hidden" name="debugEmail" value="henrique.contin@agixforce.com.br">                                -->
 
                                   
                                   <label for="first_name"class="bricks-form__label">Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" class="bricks-form__input  js-text js-field-cf_primeiro_nome"  /><br>
@@ -1148,13 +1150,14 @@
                                   </div>
 
                                   <script>
-                                    document.querySelector('form').addEventListener('submit', function(e) {
-                                      const checked = [...document.querySelectorAll('.tipo-negocio:checked')]
-                                        .map(cb => cb.value)
-                                        .join(';');
+                                      
+                                      document.querySelector('form').addEventListener('submit', function(e) {
+                                        const checked = [...document.querySelectorAll('.tipo-negocio:checked')]
+                                          .map(cb => cb.value)
+                                          .join(';');
 
-                                      document.getElementById('sf_tipo_negocio').value = checked;
-                                    });
+                                        document.getElementById('sf_tipo_negocio').value = checked;
+                                      });
                                   </script>
 
                                   <br>
