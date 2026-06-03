@@ -1056,12 +1056,15 @@
                                  id="rd-form-lv5ns4bc"
                                  class="bricks--component bricks-form rd-form"
                               >
-                                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000003tkkW" method="POST" data-lang="pt-BR" novalidate="novalidate">
+
+                              <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000003tkkW" method="POST" data-lang="pt-BR" novalidate="novalidate">
                                   <input type=hidden name="oid" value="00DHn000003tkkW">
                                   <!-- <input type=hidden name="retURL" value="https://abrasel-poc.netlify.app/quero-associar.html"> -->
+                                  <input type="hidden" name="debug" value=1>                              
+                                  <input type="hidden" name="debugEmail" value="henrique.contin@agixforce.com.br">                               
 
                                   
-                                  <label for="first_name"class="bricks-form__label">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" class="bricks-form__input  js-text js-field-cf_primeiro_nome"  /><br>
+                                  <label for="Name"class="bricks-form__label">Nome</label><input  id="Name" maxlength="40" name="Name" size="20" type="text" class="bricks-form__input  js-text js-field-cf_primeiro_nome"  /><br>
                                   <label for="email" class="bricks-form__label"    >Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" class="bricks-form__input required js-email js-field-email" /><br>
                                   <label for="phone" class="bricks-form__label" >Telefone</label> <input id="phone" maxlength="40" name="phone" size="20" type="text" class="bricks-form__input required phone js-phone js-field-mobile_phone" /><br>
                                   <label for="00NHn00000bGdiB" class="bricks-form__label">Estado_Sigla:</label>
@@ -1113,33 +1116,45 @@
                                       <option value="Não tenho um negócio de alimentação">Não tenho um negócio de alimentação</option>
                                       <option value="Dark kitchen">Dark kitchen</option>
                                   </select> -->
+
                                   <div class="bricks-form__field  " data-step="1" data-is-conditional="false" data-conditional-rules="W10=">
                                     <label for="00NHn00000bGdiL" class="bricks-form__label">
                                       Tipo de negócio (pode marcar mais de uma opção):*
                                     </label>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Bar" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                    <input type="hidden" name="00NHn00000bGdiL" id="sf_tipo_negocio">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Bar">
                                         Bar</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Restaurante a la carte" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Restaurante a la carte" >
                                         Restaurante a la carte</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Restaurante a quilo" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Restaurante a quilo" >
                                         Restaurante a quilo</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Restaurante self-service sem balança" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Restaurante self-service sem balança" >
                                         Restaurante self-service sem balança</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Lanchonete" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Lanchonete" >
                                         Lanchonete</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Padaria" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Padaria" >
                                         Padaria</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Casa noturna" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Casa noturna" >
                                         Casa noturna</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Buffet" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Buffet" >
                                         Buffet</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Outro" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Outro" >
                                         Outro</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Não tenho um negócio de alimentação" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Não tenho um negócio de alimentação" >
                                         Não tenho um negócio de alimentação</label></div>
-                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input name="cf_tipo_de_negocio[]" type="checkbox" value="Dark kitchen" class="bricks-form__field__option__input required js-field-cf_tipo_de_negocio" required="required">
+                                      <div class="bricks-form__field__option"><label class="bricks-form__label"> <input type="checkbox" class="tipo-negocio" value="Dark kitchen" >
                                         Dark kitchen</label></div>
                                   </div>
+
+                                  <script>
+                                    document.querySelector('form').addEventListener('submit', function(e) {
+                                      const checked = [...document.querySelectorAll('.tipo-negocio:checked')]
+                                        .map(cb => cb.value)
+                                        .join(';');
+
+                                      document.getElementById('sf_tipo_negocio').value = checked;
+                                    });
+                                  </script>
 
                                   <br>
                                   <div class="bricks-form__field  " data-step="1" data-is-conditional="false" data-conditional-rules="W10=">
